@@ -14,6 +14,26 @@ $(document).ready(function () {
 
 
     
+       
+    function QandA(){
+        do{i = 0;
+            $("#question1").html(questions[i].q),
+            console.log(questions[i].q)
+            
+            //if user clicks T or F i++
+
+
+        }while (i <= questions.length)
+
+    }
+
+
+    // store answer.
+
+    // compare answer.
+
+    //show results of the right answers vs total.
+
     
     //timer operations - countdown from 1:00 and reval questions
     $("#start").click(start);
@@ -21,6 +41,7 @@ $(document).ready(function () {
         intervalId = setInterval(count, 1000);
         $("#start").hide();
         $(".tfbtn").show();
+        QandA();
         function count() {
             time--;
 
@@ -61,10 +82,7 @@ $(document).ready(function () {
 
 
 
-    // Generic function that ties button click action to page. allowing doc to see if button has desired class then run function associated.
-   // $(document).on("click", ".class", functiontodo);
-
-
+    
 
     //progress bar increase timer
     // var downloadTimer = setInterval(function(){d
